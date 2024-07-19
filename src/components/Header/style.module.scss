@@ -1,0 +1,65 @@
+.container {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--grey-0);
+  padding: 20px 0 20px 0;
+  align-items: center;
+}
+
+.divContainer {
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+.input {
+  background-color: var(--grey-100);
+  border-radius: 4px;
+  padding: 5px;
+  border: 2px solid var(--grey-300);
+}
+
+.submit {
+  position: relative;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  :hover {
+    color: var(--grey-0);
+    background-color: var(--grey-300);
+    border-radius: 5px;
+  }
+}
+
+.shoppingCartDesactived {
+  color: var(--grey-10);
+}
+
+.shoppingCartActivated {
+  color: var(--grey-600);
+}
+
+.contador {
+  background-color: var(--color-primary);
+  color: white;
+  position: relative;
+  top: -22px;
+  left: -10px;
+  padding: 2px 5px 2px 3px;
+  border-radius: 8px;
+}
+
+@media (max-width: 415px) {
+  .container {
+    max-width: 415px;
+    gap: 20px;
+  }
+
+  .divInput {
+    display: flex;
+  }
+  .divContainer {
+    max-width: 400px;
+    margin-left: 10px;
+  }
+}
